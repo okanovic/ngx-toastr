@@ -1,0 +1,14 @@
+<div class="container text-center">
+  <div class="row" >
+    <div class="col-3" *ngFor="let infos of toastrNames">
+      <div id="{{infos.cardId}}" class="card">
+        <div class="card-body">
+          <h3 class="card-text">
+            {{infos.name}}
+          </h3>
+          <button id="{{infos.buttonId}}" class="btn btn-primary mt-5" type="button" (click)="showToastr(infos.name)">{{infos.buttonDesc}}</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
