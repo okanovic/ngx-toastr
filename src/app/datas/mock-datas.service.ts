@@ -34,6 +34,6 @@ let TOASTRNAMES = [
         name: "Error",
         buttonDesc: "Show Error Toaster",
         cardId:"error",
-        buttonId:"warning-button"
+        buttonId:"error-button"
     },
 ]
