@@ -6,7 +6,7 @@ import { ToastrService } from 'ngx-toastr';
 export class ToasterServiceMethods {
 
     constructor(private toaster:ToastrService) { }
-    sucsessToaster(){
+    successToaster(){
         this.toaster.success('This is sucsess toastr...')
     }
     infoToaster(){

@@ -16,7 +16,7 @@ export class AppComponent implements OnInit{
   constructor(private toastrName:ToastrNameService, private toastr:ToasterServiceMethods){}
   showToastr(toasterInfo){
     if(toasterInfo == "Success"){
-      this.success = this.toastr.sucsessToaster()
+      this.success = this.toastr.successToaster()
     }else if(toasterInfo == "Info"){
       this.info = this.toastr.infoToaster()
     }else if(toasterInfo == "Warning"){
