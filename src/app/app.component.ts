@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ToastrNameService } from './datas/mock-datas.service';
-import { ToasterService } from './toaster-services/toaster.service';
+import { ToasterServiceMethods } from './toastr-services/toastr.service';
 
 @Component({
   selector: 'app-root',
@@ -9,14 +9,14 @@ import { ToasterService } from './toaster-services/toaster.service';
 })
 export class AppComponent implements OnInit{
   toastrNames;
-  succsess;
+  success;
   info;
   error;
   warning;
-  constructor(private toastrName:ToastrNameService, private toastr:ToasterService){}
+  constructor(private toastrName:ToastrNameService, private toastr:ToasterServiceMethods){}
   showToastr(toasterInfo){
-    if(toasterInfo == "Succsess"){
-      this.succsess = this.toastr.sucsessToaster()
+    if(toasterInfo == "Success"){
+      this.success = this.toastr.sucsessToaster()
     }else if(toasterInfo == "Info"){
       this.info = this.toastr.infoToaster()
     }else if(toasterInfo == "Warning"){

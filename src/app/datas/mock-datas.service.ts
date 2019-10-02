@@ -10,7 +10,7 @@ export class ToastrNameService {
 let TOASTRNAMES = [
     {
         id: 1,
-        name: "Succsess",
+        name: "Success",
         buttonDesc: "Show Sucsess Toaster",
         cardId:"sucsess",
         buttonId:"sucsess-button"

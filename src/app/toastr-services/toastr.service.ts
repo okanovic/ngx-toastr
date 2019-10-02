@@ -3,7 +3,7 @@ import { ToastrService } from 'ngx-toastr';
 
 
 @Injectable()
-export class ToasterService {
+export class ToasterServiceMethods {
 
     constructor(private toaster:ToastrService) { }
     sucsessToaster(){

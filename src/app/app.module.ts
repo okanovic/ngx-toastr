@@ -5,7 +5,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { ToastrModule } from 'ngx-toastr';
 import { ToastrNameService } from './datas/mock-datas.service';
-import { ToasterService } from './toaster-services/toaster.service';
+import { ToasterServiceMethods } from './toastr-services/toastr.service';
 
 @NgModule({
   declarations: [
@@ -17,7 +17,7 @@ import { ToasterService } from './toaster-services/toaster.service';
     ToastrModule.forRoot()
 
 ],
-  providers: [ToastrNameService,ToasterService],
+  providers: [ToastrNameService,ToasterServiceMethods],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
